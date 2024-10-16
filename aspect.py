@@ -77,7 +77,7 @@ plt.subplots_adjust(wspace=0.3)  # 增加水平间距
 plt.tight_layout()
 
 # 设置标题
-output_file_path = f'data/Polynomial_Regression_of_MAP_vs_PL.png'
+output_file_path = f'data/Polynomial_Regression_of_ASPECT.png'
 plt.savefig(output_file_path, dpi=300, bbox_inches='tight')
 
 # 显示图像

@@ -1,0 +1,16 @@
+# 通过adb 打开微信
+
+./adb shell am start -n com.tencent.mm/com.tencent.mm.ui.LauncherUI -f 0x40000000
+
+
+# 禁用输入法
+./adb shell pm disable-user com.baidu.input_huawei
+
+# adb接听电话
+ ./adb shell service call phone 1
+
+ # adb接收短信
+
+ ./adb shell
+ content query --uri content://sms/ --projection _id,address,body,date > /data/local/tmp/sms_output.txt
+./adb pull  /data/local/tmp/sms_output.txt
